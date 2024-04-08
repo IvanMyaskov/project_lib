@@ -1,0 +1,35 @@
+.header{
+    width: 100vw;
+    height: 80px;
+    background-color: #515151;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+.homeLogo{
+align-self: center;
+}
+.rightRow{
+    display: flex;
+    width: 40vw;
+    justify-content: space-around;
+    align-items: center;
+        div{
+            display: flex;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            color: azure;
+            cursor: pointer;
+            text-decoration: none !important;
+            &:hover{
+                border-bottom: solid 2px ;
+            }
+            p{
+                font-size: 20px;
+                margin-left: 10px;
+                
+            }
+        }
+    }
+}
