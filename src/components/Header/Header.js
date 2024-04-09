@@ -4,11 +4,12 @@ import { VscCode } from "react-icons/vsc";
 import { BiBookOpen } from "react-icons/bi";
 import { GrCursor } from "react-icons/gr";
 import { Link } from "react-router-dom";
+import { CiHome } from "react-icons/ci";
 function Header(){
     return(
         <div className={styles.header}>
-            <Link to='/' style={{ textDecoration: 'none' }}>
-                <div className={styles.homeLogo}>home</div>
+            <Link to='/' >
+                <div className={styles.homeLogo}><CiHome /></div>
             </Link>
             <div className={styles.rightRow}>
                 <div className={styles.about}>
