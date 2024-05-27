@@ -4,13 +4,12 @@ import Counter from "../../components/Counter/Counter";
 import styles from "./counter_project.module.scss"
 
 function CounterProject() {
-    return(
+    return(<>
+        <Header />
         <div className={styles.container}>
-            <Header />
-            <div>
             <Counter />
-            </div>
         </div>
+        </>
     )
 }
 export default CounterProject
