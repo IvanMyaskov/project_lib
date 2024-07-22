@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./project_card.module.scss"
-import counter from "./counter.png"
-function Card(){
+function Card(props){
+    const t = props.text;
+    const img =props.img;
     return(
         <div className={styles.card}>
-            <img src={counter}></img>
-            <p className={styles.cardName}>Counter</p>
+            <img src={img}></img>
+            <p className={styles.cardName}>{t}</p>
         </div>
     )
 }

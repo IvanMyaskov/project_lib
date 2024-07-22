@@ -11,6 +11,7 @@ import {
   Link,
 } from "react-router-dom";
 import CounterProject from './projects/counter_project/counter_project';
+import ComProject from './projects/com_project/com_project';
 const router = createBrowserRouter([
 {
   path: "/",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
 {
   path: "/projects/counter",
   element: <CounterProject />
+},
+{
+  path: "/projects/comments",
+  element: <ComProject />
 }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
